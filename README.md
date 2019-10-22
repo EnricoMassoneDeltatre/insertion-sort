@@ -1,2 +1,2 @@
-# insertion-sort
-Javascript implementation of insertion sort algorithm
+# Insertion Sort
+Javascript implementation of insertion sort algorithm for nodejs environment.
