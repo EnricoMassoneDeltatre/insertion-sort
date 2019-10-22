@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/EnricoMassoneDeltatre/insertion-sort/issues"
   },
-  "homepage": "https://github.com/EnricoMassoneDeltatre/insertion-sort#readme"
+  "homepage": "https://github.com/EnricoMassoneDeltatre/insertion-sort#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
