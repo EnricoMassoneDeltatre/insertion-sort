@@ -115,3 +115,21 @@ test("an ordered array is returned unchanged", () => {
     assert.isArray(result);
     expect(result).to.eql([1, 2, 3]);
 });
+
+test("an array ordered in descending order is reversed", () => {
+    // ACT
+    const result = insertionSort([3, 2, 1]);
+
+    // ASSERT
+    assert.isArray(result);
+    expect(result).to.eql([1, 2, 3]);
+});
+
+test("shuffled array is ordered in ascending order", () => {
+    // ACT
+    const result = insertionSort([7, 6, 8, 9, 2, 1, 3, 5, 4, 12, 11, 10]);
+
+    // ASSERT
+    assert.isArray(result);
+    expect(result).to.eql([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+});
