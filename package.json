@@ -1,0 +1,25 @@
+{
+  "name": "insertion-sort",
+  "version": "1.0.0",
+  "description": "insertion sort javascript implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnricoMassoneDeltatre/insertion-sort.git"
+  },
+  "keywords": [
+    "algorithm",
+    "javascript",
+    "es6",
+    "sorting"
+  ],
+  "author": "enrico massone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnricoMassoneDeltatre/insertion-sort/issues"
+  },
+  "homepage": "https://github.com/EnricoMassoneDeltatre/insertion-sort#readme"
+}
