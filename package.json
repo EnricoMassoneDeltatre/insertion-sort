@@ -4,7 +4,7 @@
   "description": "insertion sort javascript implementation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,12 +17,13 @@
     "sorting"
   ],
   "author": "enrico massone",
-  "license": "ISC",
+  "license": "mit",
   "bugs": {
     "url": "https://github.com/EnricoMassoneDeltatre/insertion-sort/issues"
   },
   "homepage": "https://github.com/EnricoMassoneDeltatre/insertion-sort#readme",
   "devDependencies": {
+    "chai": "^4.2.0",
     "jest": "^24.9.0"
   }
 }
