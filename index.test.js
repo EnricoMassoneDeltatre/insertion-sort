@@ -221,3 +221,21 @@ test("if any item in input array is function then throws TypeError", () => {
     
     throw new Error("Should not reaching here");
 });
+
+test("an array containing negative integers is ordered as expected", () => {
+    // ACT
+    const result = insertionSort([2, 3, 1, -5, -6, -2, -4]);
+
+    // ASSERT
+    assert.isArray(result);
+    expect(result).to.eql([-6, -5, -4, -2, 1, 2, 3]);
+});
+
+test("an array containing decimals is ordered as expected", () => {
+    // ACT
+    const result = insertionSort([2.3, 4.5, 2.999, 1, 6.7, 5, 4]);
+
+    // ASSERT
+    assert.isArray(result);
+    expect(result).to.eql([1, 2.3, 2.999, 4, 4.5, 5, 6.7]);
+});
