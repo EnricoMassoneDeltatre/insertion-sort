@@ -133,3 +133,91 @@ test("shuffled array is ordered in ascending order", () => {
     assert.isArray(result);
     expect(result).to.eql([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
 });
+
+test("if any item in input array is string then throws TypeError", () => {
+    try {
+        const _ = insertionSort([1, 2, 3, "foo"]);
+    } catch (error) {
+        assert.instanceOf(error, TypeError);
+        return;
+    }
+    
+    throw new Error("Should not reaching here");
+});
+
+test("if any item in input array is boolean then throws TypeError", () => {
+    try {
+        const _ = insertionSort([1, 2, 3, true]);
+    } catch (error) {
+        assert.instanceOf(error, TypeError);
+        return;
+    }
+    
+    throw new Error("Should not reaching here");
+});
+
+test("if any item in input array is null then throws TypeError", () => {
+    try {
+        const _ = insertionSort([1, 2, 3, null]);
+    } catch (error) {
+        assert.instanceOf(error, TypeError);
+        return;
+    }
+    
+    throw new Error("Should not reaching here");
+});
+
+test("if any item in input array is undefined then throws TypeError", () => {
+    try {
+        const _ = insertionSort([1, 2, 3, undefined]);
+    } catch (error) {
+        assert.instanceOf(error, TypeError);
+        return;
+    }
+    
+    throw new Error("Should not reaching here");
+});
+
+test("if any item in input array is object then throws TypeError", () => {
+    try {
+        const _ = insertionSort([1, 2, 3, {key: "value"}]);
+    } catch (error) {
+        assert.instanceOf(error, TypeError);
+        return;
+    }
+    
+    throw new Error("Should not reaching here");
+});
+
+test("if any item in input array is symbol then throws TypeError", () => {
+    try {
+        const _ = insertionSort([1, 2, 3, Symbol()]);
+    } catch (error) {
+        assert.instanceOf(error, TypeError);
+        return;
+    }
+    
+    throw new Error("Should not reaching here");
+});
+
+test("if any item in input array is array then throws TypeError", () => {
+    try {
+        const _ = insertionSort([1, 2, 3, []]);
+    } catch (error) {
+        assert.instanceOf(error, TypeError);
+        return;
+    }
+    
+    throw new Error("Should not reaching here");
+});
+
+test("if any item in input array is function then throws TypeError", () => {
+    try {
+        const _ = insertionSort([1, 2, 3, () => 13 ]);
+    } catch (error) {
+        assert.instanceOf(error, TypeError);
+        return;
+    }
+    
+    throw new Error("Should not reaching here");
+});

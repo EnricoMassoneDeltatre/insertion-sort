@@ -29,6 +29,10 @@ const insertionSort = nums => {
         throw new TypeError("nums must be an array");
     }
 
+    if(nums.some(item => typeof item !== "number")) {
+        throw new TypeError("all items in nums must be of type number");
+    }
+
     if (nums.length < 2) {
         return nums;
     }
